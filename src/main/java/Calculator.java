@@ -20,6 +20,11 @@ public class Calculator {
     //TODO
     //add methods for multiply, division, subtraction, square root, x^2
 
+    public double division(double a, double b) {
+
+        return a / b;
+    }
+
 }
 
 
