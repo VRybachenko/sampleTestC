@@ -77,6 +77,5 @@ public class AddTwoValuesTests {
     @After
     public void consolePrintAfter() {
         System.out.println("Tests finished!!!");
-
     }
 }
