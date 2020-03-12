@@ -26,10 +26,10 @@ public class Calculator {
 
         double divisionResult = a / b;
 
-        if(Double.isInfinite(divisionResult)){
+        /*if(Double.isInfinite(divisionResult)){
             System.out.println("Can't be divided by 0");
             divisionResult = 0;
-        }
+        }*/
 
       return divisionResult;
     }
@@ -43,10 +43,10 @@ public class Calculator {
 
         double rootResult = Math.sqrt(a);
 
-        if(Double.isNaN(rootResult)){
+        /*if(Double.isNaN(rootResult)){
             System.out.println("incorrect value: " + a);
            rootResult = 0;
-        }
+        }*/
 
         return rootResult;
     }

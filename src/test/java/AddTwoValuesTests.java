@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 /**
  * Created by kate on 1/12/16.
@@ -35,7 +36,7 @@ public class AddTwoValuesTests {
 
     @Test
     public void testDivisionDivideByZero(){
-        assertEquals("4 / 0 must be Can't be divided by Zero", 0.0, calc.division(4,0));
+        assertTrue("4 / 0 must be Can't be divided by Zero", Double.isInfinite(calc.division(4,0)));
     }
 
     @Test
@@ -60,7 +61,7 @@ public class AddTwoValuesTests {
 
     @Test
     public void testRootNegativeValues() {
-        assertEquals("square root of -2 must be NaN",0.0, calc.root(-2));
+        assertEquals("square root of -2 must be NaN",Double.NaN, calc.root(-2));
     }
 
     @Test
